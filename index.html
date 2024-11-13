@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <!--this is the link provide icon used i website "cdn font- awesome"-->
+    <!--after link go font awesome.com -> click free oprnsource icon -> select icon -> copy html code-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--main container-->
+    <div class="container">
+        <!--top heading-->
+        <h2>Currency Converter</h2>
+
+        <form action="">
+            <!--enter amount section-->
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" placeholder="eg: 100" name="" id="">
+            </div>
+            <!--dropdown lists-->
+            <div class="dropdown">
+              
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt=""> <!--this link an api to provide currency flag "US -> usa"-->
+                        <select name="" id="">
+                            <option value="USD" selected>USD</option>
+                            <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                    </div>
+                </div>
+                <!--icon from fontawesome.com-->
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt=""> <!--this link an api to provide currency flag "IN -> India"-->
+                        <select name="" id="">
+                            <option value="USD">USD</option>
+                            <option value="INR" selected>INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!--final message-->
+    <div class="msg">1 USD = 80 INR</div>
+    <button class="btn">Get Exchange Rate</button>
+
+</body>
+<script src="app.js"></script>
+</html>
